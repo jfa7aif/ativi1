@@ -1,0 +1,27 @@
+class macaco:
+  def __init__(self, nome, bucho):
+    self.nome = nome 
+    self.bucho = bucho
+  def comer(self, alimento):
+    self.bucho = alimento
+  def verbucho(self):
+    return self.bucho
+  def digerir(self):
+    return f'O {self.nome} está digerindo o {self.bucho}'
+
+bing = macaco('joelma', 'nada')
+print(bing.verbucho())
+bing.comer('banana')
+print(bing.digerir())
+
+class funcionario:
+  def __init__(self, nome, salario):
+    self.nome = nome
+    self.salario = salario
+  def mostrarnome(self):
+    return self.nome 
+  def mostrarsalario(self):
+    return self.salario
+pessoa = funcionario('joão', 2000)
+print(pessoa.mostrarnome())
+print(pessoa.mostrarsalario())
